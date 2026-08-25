@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Synapse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+  <div class="bg-glow glow-one"></div>
+  <div class="bg-glow glow-two"></div>
+
+  <a href="index.html" class="auth-brand">
+    <div class="brand-logo">S</div>
+    <span>synapse</span>
+  </a>
+
+  <div class="auth-card">
+
+    <div class="auth-icon">S</div>
+
+    <h1>Welcome back</h1>
+
+    <p>
+      Sign in to continue to Synapse.
+    </p>
+
+    <form onsubmit="loginUser(event)">
+
+      <label>Email or username</label>
+      <input
+        id="loginIdentity"
+        type="text"
+        placeholder="you@example.com"
+        required
+      >
+
+      <label>Password</label>
+
+      <div class="password-field">
+        <input
+          id="loginPassword"
+          type="password"
+          placeholder="••••••••"
+          required
+        >
+        <button type="button" onclick="togglePassword('loginPassword')">
+          👁
+        </button>
+      </div>
+
+      <div class="auth-options">
+        <label class="remember">
+          <input type="checkbox">
+          Remember me
+        </label>
+
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <button class="auth-submit" type="submit">
+        Sign in
+      </button>
+
+    </form>
+
+    <div class="divider">
+      <span>or</span>
+    </div>
+
+    <button class="social-button">
+      <span>◉</span>
+      Continue with GitHub
+    </button>
+
+    <p class="switch-auth">
+      Don't have an account?
+      <a href="signup.html">Create one</a>
+    </p>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
