@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synapse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-page">
+
+  <aside class="app-sidebar">
+
+    <div class="app-brand">
+      <div class="brand-logo">S</div>
+      <span>synapse</span>
+    </div>
+
+    <div class="sidebar-search">
+      🔍
+      <span>Search</span>
+    </div>
+
+    <div class="sidebar-title">
+      WORKSPACE
+    </div>
+
+    <button class="side-link active">
+      <span>🏠</span>
+      Home
+    </button>
+
+    <button class="side-link">
+      <span>💬</span>
+      Messages
+      <b>3</b>
+    </button>
+
+    <button class="side-link">
+      <span>👥</span>
+      Teams
+    </button>
+
+    <button class="side-link">
+      <span>📞</span>
+      Calls
+    </button>
+
+    <div class="sidebar-title">
+      DIRECT MESSAGES
+    </div>
+
+    <div class="dm-user">
+      <div class="avatar purple">A</div>
+      <span>Alex</span>
+      <i class="online-dot"></i>
+    </div>
+
+    <div class="dm-user">
+      <div class="avatar blue">R</div>
+      <span>Rahul</span>
+      <i class="online-dot"></i>
+    </div>
+
+    <div class="dm-user">
+      <div class="avatar orange">K</div>
+      <span>Karan</span>
+    </div>
+
+    <div class="sidebar-bottom">
+
+      <div class="profile-mini">
+        <div class="avatar cyan">K</div>
+
+        <div>
+          <b>Krishna</b>
+          <small>Online</small>
+        </div>
+
+        <button onclick="openSettings()">⚙</button>
+      </div>
+
+    </div>
+
+  </aside>
+
+  <main class="app-main">
+
+    <header class="app-header">
+
+      <div>
+        <h2>Welcome to Synapse 👋</h2>
+        <p>Your communication hub.</p>
+      </div>
+
+      <div class="header-actions">
+        <button onclick="showNotification()">🔔</button>
+        <button onclick="openProfile()">👤</button>
+      </div>
+
+    </header>
+
+    <section class="dashboard">
+
+      <div class="welcome-card">
+
+        <div>
+          <span class="eyebrow">YOUR SPACE</span>
+
+          <h1>
+            Everything connected.
+          </h1>
+
+          <p>
+            Messages, teams and calls — all in one place.
+          </p>
+
+          <button class="primary-button">
+            Start a conversation →
+          </button>
+        </div>
+
+        <div class="synapse-core">
+          <div class="core-ring ring-one"></div>
+          <div class="core-ring ring-two"></div>
+          <div class="core-ring ring-three"></div>
+          <div class="core-center">S</div>
+        </div>
+
+      </div>
+
+      <div class="dashboard-grid">
+
+        <div class="dashboard-card">
+          <span class="card-icon">💬</span>
+          <h3>Messages</h3>
+          <p>3 unread conversations</p>
+          <button>Open messages →</button>
+        </div>
+
+        <div class="dashboard-card">
+          <span class="card-icon">👥</span>
+          <h3>Teams</h3>
+          <p>2 active teams</p>
+          <button>View teams →</button>
+        </div>
+
+        <div class="dashboard-card">
+          <span class="card-icon">📞</span>
+          <h3>Calls</h3>
+          <p>No active calls</p>
+          <button>View calls →</button>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
