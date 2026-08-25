@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — Synapse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+  <div class="bg-glow glow-one"></div>
+  <div class="bg-glow glow-two"></div>
+
+  <a href="index.html" class="auth-brand">
+    <div class="brand-logo">S</div>
+    <span>synapse</span>
+  </a>
+
+  <div class="auth-card signup-card">
+
+    <div class="auth-icon">S</div>
+
+    <h1>Create your account</h1>
+
+    <p>
+      Join Synapse and start connecting.
+    </p>
+
+    <form onsubmit="signupUser(event)">
+
+      <label>Display name</label>
+      <input
+        id="signupName"
+        type="text"
+        placeholder="Your name"
+        required
+      >
+
+      <label>Username</label>
+      <input
+        id="signupUsername"
+        type="text"
+        placeholder="@username"
+        required
+      >
+
+      <label>Email</label>
+      <input
+        id="signupEmail"
+        type="email"
+        placeholder="you@example.com"
+        required
+      >
+
+      <label>Password</label>
+
+      <div class="password-field">
+        <input
+          id="signupPassword"
+          type="password"
+          placeholder="Create a password"
+          minlength="8"
+          required
+        >
+
+        <button
+          type="button"
+          onclick="togglePassword('signupPassword')">
+          👁
+        </button>
+      </div>
+
+      <label class="terms">
+        <input type="checkbox" required>
+        <span>
+          I agree to the Synapse terms and privacy policy.
+        </span>
+      </label>
+
+      <button class="auth-submit" type="submit">
+        Create account
+      </button>
+
+    </form>
+
+    <p class="switch-auth">
+      Already have an account?
+      <a href="login.html">Sign in</a>
+    </p>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
